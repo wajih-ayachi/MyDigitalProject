@@ -12,7 +12,7 @@
       prepend-icon="mdi-magnify"
       item-text="name"
       item-value="symbol"
-      label=" Chercher un ami..."
+      label=" Chercher une activité..."
       solo
       class="search-bar"
       position="absolute"
@@ -55,17 +55,17 @@
             </p>
           </v-card>
           <v-spacer></v-spacer>
-          <v-btn class="ml-9 " color="#EE957F" dark>cliquer ici</v-btn>
+          <v-btn class="ml-9" color="#EE957F" dark>cliquer ici</v-btn>
         </v-col>
 
         <v-col md="4" offset-md="4">
-          <v-card class="pa-2" outlined tile>
+          <v-card class="pa-0" outlined tile>
             <v-img
               mx-auto
               justify-space-between
               contain
               position="center"
-              max-height="300"
+              max-height="500"
               max-width="500"
               src="../../assets/images/equipe_NeedU.png"
             ></v-img>
@@ -78,10 +78,9 @@
         </v-btn> -->
     </v-container>
     <v-container d-flex flex-column mb-6 class="bg">
-    <v-layout row wrap>
-      <v-row  class="mb-9">
-     
-    <!--<v-slide-group
+      <v-layout row wrap>
+        <v-row class="mb-9">
+          <!--<v-slide-group
       v-model="model"
       class="pa-4"
       center-active
@@ -123,104 +122,80 @@
       </v-slide-item>
     </v-slide-group>-->
 
-     <v-row>
-     <v-col
-      cols="6"
-      sm="6"
-     
-    >
-      <v-img class="mx-auto ml-30"
-        src="../../assets/images/activites-manuelles.jpg"
-         max-width="60%">
-         <v-tab to="/actu">
-          <v-btn
-  class="span"
-  elevation="5"
-  large
->ACTIVITÉS MANUELLES</v-btn>
-         </v-tab>
-      
-      </v-img>
-    </v-col>
+          <v-row>
+            <v-col cols="6" sm="6">
+              <v-img
+                class="mx-auto ml-30"
+                d-block
+                src="../../assets/images/activites-manuelles.jpg"
+                max-width="60%"
+              >
+                <v-tab to="/actu">
+                  <v-btn class="span" elevation="5" large
+                    >ACTIVITÉS MANUELLES</v-btn
+                  >
+                </v-tab>
+              </v-img>
+            </v-col>
 
-    <v-col
-      cols="6"
-      sm="6"
-    >
-      <v-img class="mx-auto"
-      src="../../assets/images/activites-sport.jpg"
-       max-width="60%"
-       rounded-xl
-      >
-    <v-btn
-  class="span"
-  elevation="5"
-  large
->ACTIVITÉS SPORTIVES</v-btn>
-      </v-img>
-    </v-col>
+            <v-col cols="6" sm="6">
+              <v-img
+                class="mx-auto"
+                style="flex-wrap: nowrap"
+                src="../../assets/images/activites-sport.jpg"
+                max-width="60%"
+                rounded-xl
+              >
+                <v-btn class="span" elevation="5" large
+                  >ACTIVITÉS SPORTIVES</v-btn
+                >
+              </v-img>
+            </v-col>
+          </v-row>
+          <v-row>
+            <v-col cols="6" sm="6">
+              <v-img
+                class="mx-auto"
+                style="flex-wrap: nowrap"
+                src="../../assets/images/activites-culturelles.jpg"
+                max-width="60%"
+                rounded-xl
+              >
+                <v-btn class="span" elevation="5" large
+                  >ACTIVITÉS CULTURELLES</v-btn
+                >
+              </v-img>
+            </v-col>
 
-    
-  </v-row>
-  <v-row>
-     <v-col
-      cols="6"
-      sm="6"
-     
-    >
-      <v-img class="mx-auto"
-        src="../../assets/images/activites-culturelles.jpg"
-         max-width="60%"
-         rounded-xl>
-      <v-btn
-  class="span"
-  elevation="5"
-  large
->ACTIVITÉS CULTURELLES</v-btn>
-      </v-img>
-    </v-col>
+            <v-col cols="6" sm="6">
+              <v-img
+                class="mx-auto"
+                style="flex-wrap: nowrap"
+                max-width="60%"
+                rounded-xl
+                src="../../assets/images/loisir-detente.jpg"
+                mx-auto
+              >
+                <v-btn class="span" elevation="5" large
+                  >LOISIR ET DÉTENTE</v-btn
+                >
+              </v-img>
+            </v-col>
+          </v-row>
 
-    <v-col
-      cols="6"
-      sm="6"
-
-    >
-      <v-img class="mx-auto"
-       max-width="60%"
-       rounded-xl
-      src="../../assets/images/loisir-detente.jpg" mx-auto>
-         <v-btn
-  class="span"
-  elevation="5"
-  large
->LOISIR ET DÉTENTE</v-btn>
-      </v-img>
-    </v-col>
-
-   
-  </v-row>
-  
-  <v-btn class="hero">Autres</v-btn>
-      </v-row>
-    </v-layout>
+          <v-btn class="hero">Autres</v-btn>
+        </v-row>
+      </v-layout>
     </v-container>
-    
-  
   </container>
-  
 </template>
 
 <script>
-
 export default {
+  name: "home",
 
-name:'home',
-
-  
   data() {
-    
     return {
-      
       items: [
         {
           src:
@@ -230,25 +205,19 @@ name:'home',
           src:
             "https://images.pexels.com/photos/3184183/pexels-photo-3184183.jpeg?cs=srgb&dl=pexels-fauxels-3184183.jpg&fm=jpg",
         },
-     
-       
-     
-       
       ],
-        
     };
   },
 };
 </script>
 
-<style  >
+<style>
 .container {
   display: contents;
   margin-bottom: 0px;
   margin-top: 5px;
   max-width: 100%;
   max-height: 10%;
-  
 }
 .search-bar {
   position: absolute;
@@ -296,57 +265,57 @@ name:'home',
   margin-top: 300px;
 }
 .v-application .mb-9 {
-    margin-bottom: 36px !important;
-    BACKGROUND: #EAEEF1;
-    PADDING-TOP: 100PX;
-    PADDING-BOTTOM: 100PX;
-    width: 50%;
-    display: block;
-    padding-right: 20px;
-    padding-left: 20px;
-    border-radius: 20px;
+  margin-bottom: 36px !important;
+  background: #eaeef1;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  width: 50%;
+  display: block;
+  padding-right: 20px;
+  padding-left: 20px;
+  border-radius: 20px;
 }
-.v-btn.hero{
+.v-btn.hero {
   margin-left: 650px;
   margin-top: 50px;
-  background: #EE957F;
-  
+  background: #ee957f;
 }
 .theme--light.v-btn.v-btn--has-bg {
-    background-color: #EE957F;
-   
-    color: white;
+  background-color: #ee957f;
+
+  color: white;
 }
-.v-sheet.mx-auto{
-  padding:10px;
+.v-sheet.mx-auto {
+  padding: 10px;
   border-radius: 10px;
 }
-.v-image.mx-auto{
+.v-image.mx-auto {
   border-radius: 20px;
-
 }
-  .v-col{
-    margin-left: 300px;
-  }
- .my-span {
+.v-col {
+  margin-left: 300px;
+}
+.my-span {
   background-color: gray;
   color: white;
   font-weight: bold;
   margin-left: 120px;
-  margin-top:125px;
+  margin-top: 125px;
   text-align: center;
-  display:inline-flex;
+  display: inline-flex;
   font-size: 20px;
 }
-.v-btn.span{
-  background-color: gray!important;
+.v-btn.span {
+  background-color: gray !important;
   color: white;
   font-weight: bold;
   margin-left: 50px;
-  margin-top:125px;
+  margin-top: 125px;
   text-align: center;
-  display:inline-flex;
+  display: inline-flex;
   font-size: 20px;
 }
-
+.v-btn.ml-9{
+  font-weight:bolder!important;
+}
 </style>

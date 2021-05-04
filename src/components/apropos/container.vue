@@ -1,67 +1,122 @@
 <template>
-  <v-layout justify-center mt-10>
-    <v-flex xs12 sm6 mt-10>
-      <v-toolbar color="indigo" dark>
-        <v-toolbar-side-icon></v-toolbar-side-icon>
-        <v-toolbar-title>Nos offres</v-toolbar-title>
-        <v-spacer></v-spacer>
-        <v-btn icon prepend-icon="mdi-account-cercle">
-        <v-icon rounded> mdi-magnify </v-icon>
-      </v-btn>
-      </v-toolbar>
+  <v-container fluid>
+   <v-container>
+      <v-img  
+      class="ma-0 pa-0"
+    cover
+    height="900px"
+         aspect-ratio="9"
+      src="../../assets/images/comment-ça-marche.jpg"> 
+      
+      <span  class="titre" align-center>
+         COMMENT ÇA MARCHE ?
+        </span>
+      </v-img>
+   </v-container>
+  
+ <v-container class="grey lighten-5">
+      <v-row wrap class="mb-6" no-gutters>
+        <v-col md="12" ml-auto>
+          <v-card class="pl-9" outlined tile>
+            
+            <v-spacer></v-spacer>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas
+              porro assumenda optio, magni beatae eveniet necessitatibus
+              corporis ut reprehenderit dolorem totam repellendus? Pariatur
+              error doloribus possimus quibusdam beatae est omnis nisi,
+              corporis, impedit velit, accusantium assumenda! Ut, eos delectus
+              quisquam incidunt necessitatibus at, ipsum, facere repellendus nam
+              laborum sequi quod architecto labore sed quis recusandae vitae
+              perspiciatis magni nihil optio. Optio nam id beatae commodi unde a
+              doloribus, repellendus eos explicabo pariatur maiores doloremque
+              expedita at! Quod accusantium expedita commodi perspiciatis, illo
+              beatae reprehenderit, atque id quibusdam eum dolores cumque
+              adipisci sequi porro voluptatum? Sit voluptates laboriosam laborum
+              aspernatur error?
+            </p>
+          </v-card>
+          <v-spacer></v-spacer>
+          <v-col justify="center" align="center">
+       
+         <v-btn class="ml-9" color="#EE957F" dark>JE COMMENCE</v-btn>
+          </v-col>
+       
+        </v-col>
+        <v-row wrap class="mb-6" no-gutters>
+        <v-col md="6" ml-auto>
+          <v-card class="pl-9" outlined tile>
+           
+            <v-spacer></v-spacer>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas
+              porro assumenda optio, magni beatae eveniet necessitatibus
+              corporis ut reprehenderit dolorem totam repellendus? Pariatur
+              error doloribus possimus quibusdam beatae est omnis nisi,
+              corporis, impedit velit, accusantium assumenda! Ut, eos delectus
+              quisquam incidunt necessitatibus at, ipsum, facere repellendus nam
+              laborum sequi quod architecto labore sed quis recusandae vitae
+              perspiciatis magni nihil optio. Optio nam id beatae commodi unde a
+              doloribus, repellendus eos explicabo pariatur maiores doloremque
+              expedita at! Quod accusantium expedita commodi perspiciatis, illo
+              beatae reprehenderit, atque id quibusdam eum dolores cumque
+              adipisci sequi porro voluptatum? Sit voluptates laboriosam laborum
+              aspernatur error?
+            </p>
+          </v-card>
+       
+          <v-spacer></v-spacer>
+           <v-col justify="center" align="center">
+         <v-btn class="ml-9" color="#EE957F" dark>JE COMMENCE</v-btn>
+          </v-col>
+         
+        </v-col>
+        
 
-      <v-card>
-        <v-container
-          fluid
-          grid-list-md
-        >
-          <v-layout row wrap>
-            <v-flex
-              v-for="card in cards"
-              :key="card.title"
-              v-bind="{ [`xs${card.flex}`]: true }"
-            >
-              <v-card>
-                <v-img
-                  :src="card.src"
-                  height="200px"
-                >
-                  <v-container
-                    fill-height
-                    fluid
-                    pa-2
-                  >
-                    <v-layout fill-height>
-                      <v-flex xs12 align-end flexbox>
-                        <span class="headline white--text" v-text="card.title"></span>
-                      </v-flex>
-                    </v-layout>
-                  </v-container>
-                </v-img>
+        <v-col md="6" >
+          <v-card class="pa-2" outlined tile>
+           <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas
+              porro assumenda optio, magni beatae eveniet necessitatibus
+              corporis ut reprehenderit dolorem totam repellendus? Pariatur
+              error doloribus possimus quibusdam beatae est omnis nisi,
+              corporis, impedit velit, accusantium assumenda! Ut, eos delectus
+              quisquam incidunt necessitatibus at, ipsum, facere repellendus nam
+              laborum sequi quod architecto labore sed quis recusandae vitae
+              perspiciatis magni nihil optio. Optio nam id beatae commodi unde a
+              doloribus, repellendus eos explicabo pariatur maiores doloremque
+              expedita at! Quod accusantium expedita commodi perspiciatis, illo
+              beatae reprehenderit, atque id quibusdam eum dolores cumque
+              adipisci sequi porro voluptatum? Sit voluptates laboriosam laborum
+              aspernatur error?
+            </p>
+          </v-card>
+        </v-col>
+      </v-row>
+      </v-row>
 
-                <v-card-actions>
-                  <v-spacer></v-spacer>
-                   <v-btn icon >
-        <v-icon class="mdi-heart" >  </v-icon>
-      </v-btn>
-                  
-                </v-card-actions>
-              </v-card>
-            </v-flex>
-          </v-layout>
-        </v-container>
-      </v-card>
-    </v-flex>
-  </v-layout>
+   </v-container>
+  </v-container>
 </template>
 <script>
-  export default {
-    data: () => ({
-      cards: [
-        { title: 'Location pour faire du sport', src: 'https://cdn.vuetifyjs.com/images/cards/house.jpg', flex: 12 },
-        { title: 'Location pour faire du blabla', src: 'https://cdn.vuetifyjs.com/images/cards/road.jpg', flex: 6 },
-        { title: 'Location pour dinner', src: 'https://cdn.vuetifyjs.com/images/cards/plane.jpg', flex: 6 }
-      ]
-    })
-  }
+export default {
+  data: () => ({}),
+};
 </script>
+<style scoped>
+.titre {
+  
+  color: #466F6E;
+  font-weight: bold;
+  margin-left: 50px;
+  margin-top: 125px;
+  text-align: center;
+  display: block;
+  font-size: 60px;
+  margin-top: 100px;
+ 
+}
+.v-btn.ml-9{
+  font-weight:bolder!important;
+}
+</style>
