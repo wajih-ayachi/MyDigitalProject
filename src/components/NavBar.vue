@@ -1,9 +1,9 @@
 <template>
   <v-container>
 
- <v-app-bar app class="red lighten-3" dark>
+ <v-app-bar app class="primary" dark>
       
-      <v-tool-bar-title>NEED-U</v-tool-bar-title>
+      <v-toolbar-title>NEED-U</v-toolbar-title>
        
       <v-spacer> </v-spacer>
       <v-tab to="/">

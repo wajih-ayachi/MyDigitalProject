@@ -6,6 +6,8 @@ import Actualites from "../components/actualites/container"
 import Login from "../components/login/container"
 import Apropos from "../components/apropos/container"
 import Inscription from "../components/inscription/container"
+import HomeNew from "../views/Home"
+
 Vue.use(VueRouter)
 
 const routes = [
@@ -38,6 +40,11 @@ const routes = [
     path: '/inscription',
     name: 'Inscription',
     component: Inscription
+  },
+  {
+    path: '/new-home',
+    name: 'newHome',
+    component: HomeNew
   },
 ]
 

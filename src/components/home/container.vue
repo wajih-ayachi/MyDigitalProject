@@ -242,7 +242,7 @@ name:'home',
 </script>
 
 <style  >
-.container {
+/* .container {
   display: contents;
   margin-bottom: 0px;
   margin-top: 5px;
@@ -347,6 +347,6 @@ name:'home',
   text-align: center;
   display:inline-flex;
   font-size: 20px;
-}
+} */
 
 </style>
