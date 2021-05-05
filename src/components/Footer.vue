@@ -1,16 +1,20 @@
 <template>
-  <v-footer padless>
-    <v-card flat tile class="primary white--text text-center">
+
+  <v-footer padless
+  >
+    <v-card flat mx-0 tile class="primary white--text text-center">
       <v-card-text>
         <v-btn
           v-for="icon in icons"
           :key="icon"
           class="mx-4 white--text"
-          icon
+         elevation="0"
+         rounded
+          
+       
         >
-          <v-icon size="34px">
-            {{ icon }}
-          </v-icon>
+         <a :href="icon.url" :target="icon.target"><v-icon color="white" size="34px">{{ icon.name }}</v-icon></a>
+        
         </v-btn>
       </v-card-text>
 
@@ -42,7 +46,31 @@ data: () => ({
     date: '2018-03-02',
 
     
-    icons: ["mdi-facebook", "mdi-twitter", "mdi-linkedin", "mdi-instagram"],
+    icons: [
+      
+       {
+            name:'mdi-facebook',
+            url: 'https://www.facebook.com/',
+            target: '_blank'
+        },
+        {
+            name:'mdi-twitter',
+            url: 'https://www.twitter.com/',
+            target: '_blank'
+        },
+        {
+            name:'mdi-linkedin',
+            url: 'https://www.linkedin.com/',
+            target: '_blank'
+        },
+       {
+            name:'mdi-instagram',
+            url: 'https://www.instagram.com/',
+            target: '_blank'
+        },
+      
+      
+       ],
   }),
   methods:{
     allowedDates: val=> parseInt(val.split('-')[2], 10)% 2 ===0,
@@ -55,5 +83,9 @@ model: null,
 
 </script>
 
-<style>
+<style scoped>
+
+.theme--light.v-btn.v-btn--has-bg {
+    background-color: #EE957F!important;
+}
 </style>

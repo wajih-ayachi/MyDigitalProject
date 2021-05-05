@@ -1,5 +1,5 @@
 <template>
-  <v-row  class="mb-9 grey" width>
+  <v-row  class="mb-9 pb-5 pt-5 p grey lighten-3" width>
     <v-col sm="12" md="3" offset-md="3">
       <v-img src="@/assets/images/activites-manuelles.jpg" class="rounded-xl">
         <v-btn
@@ -63,5 +63,7 @@ export default {
   display: flex;
   font-size: 20px;
 }
-
+.v-row.mb-9.grey.lighten-3{
+  padding-top: 30px;
+}
 </style>

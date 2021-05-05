@@ -27,9 +27,9 @@ export default {
 <style lang="scss">
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
 
-// .v-btn {
-//   font-family: "Open Sans", sans-serif;
-// }
+.v-btn {
+ font-family: "Open Sans", sans-serif;
+}
 // .v-application .red.lighten-3 {
 //   background-color: #ee957f !important;
 //   border-color: #ef9a9a !important;

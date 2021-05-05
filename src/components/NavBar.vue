@@ -1,7 +1,9 @@
 <template>
   <v-container>
 
- <v-app-bar app class="primary" dark>
+ <v-app-bar app class="primary" style="pt-5" dark>
+  <v-app-bar-nav-icon @click.stop="drawer = !drawer"></v-app-bar-nav-icon>
+  
       
       <v-toolbar-title>NEED-U</v-toolbar-title>
        
@@ -35,6 +37,25 @@
       <v-btn text rounded>S'inscrire</v-btn>
       </v-tab>
     </v-app-bar>
+     <v-navigation-drawer  v-model="drawer" app class="primary"  :permanent="$vuetify.breakpoint.mdAndDown" dark  elevation:0>
+
+
+         <v-tab to="/">
+      <v-btn text rounded style="font-weight: bold">Home</v-btn>
+      </v-tab>
+      <v-spacer> </v-spacer>
+      <v-tab to="/apropos">
+      <v-btn exact text rounded style="font-weight: bold"> A propos</v-btn>
+      </v-tab>
+      <v-spacer> </v-spacer>
+      <v-tab to="/actu">
+        <v-btn text rounded style="font-weight: bold">Actualités</v-btn>
+         </v-tab>   
+
+
+
+     </v-navigation-drawer>
+
 
 
 
@@ -43,25 +64,22 @@
 
 <script>
 export default {
-
+data(){
+  return{
+      drawer: false
+}
+  }
+  
 }
 </script>
 
-<style>
+<style scoped>
 
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 
 
 .v-btn{
 font-family: 'Open Sans', sans-serif;}
-.v-application .red.lighten-3 {
-    background-color: #EE957F !important;
-    border-color: #EF9A9A !important;
-}
-.a.undefined.v-tab--active.v-tab{
-  color: blue!important;
-}
-.v-btn.v-tab--active.v-tab{
-  color:red;
-}
+
+
 </style>

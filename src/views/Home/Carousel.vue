@@ -8,7 +8,7 @@
       hide-details
       hide-selected
       append-icon="mdi-magnify"
-      label="Chercher un ami..."
+      label="Chercher une activitée..."
       solo
       class="search-bar"
       background-color="#bbc8ce"

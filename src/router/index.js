@@ -1,12 +1,12 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import Home from '../components/home/container'
-import Contact from "../components/contact/container";
+
+import Contact from "../views/Contact";
 import Actualites from "../components/actualites/container"
 import Login from "../components/login/container"
-import Apropos from "../components/apropos/container"
+import Apropos from "../views/Apropos"
 import Inscription from "../components/inscription/container"
-import HomeNew from "../views/Home"
+import Home from "../views/Home"
 
 Vue.use(VueRouter)
 
@@ -41,11 +41,7 @@ const routes = [
     name: 'Inscription',
     component: Inscription
   },
-  {
-    path: '/new-home',
-    name: 'newHome',
-    component: HomeNew
-  },
+
 ]
 
 const router = new VueRouter({

@@ -21,7 +21,9 @@
         </p>
       </v-card>
       <v-spacer></v-spacer>
+      <v-tab to="/Apropos">
       <v-btn class="ml-9 font-weight-bold" color="primary" dark>cliquer ici</v-btn>
+      </v-tab>
     </v-col>
     <v-col md="6" class="d-flex justify-end">
       <v-img
