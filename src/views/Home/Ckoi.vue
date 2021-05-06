@@ -1,7 +1,15 @@
 <template>
-  <v-row wrap class="mb-6 pa-5" no-gutters>
-    <v-col md="6" style="margin-top: 90px;">
-      <v-card class="pl-9" elevation="0">
+  <v-row
+    wrap
+    class="mb-6 mx-15"
+    :class="{
+      'text-center': $vuetify.breakpoint.xsOnly,
+      'mt-15': !$vuetify.breakpoint.xsOnly
+    }"
+    no-gutters
+  >
+    <v-col sm="12" md="7">
+      <v-card elevation="0"  style="padding-top: 70px;">
         <h1 class="font-weight-bold">NEED-U C'EST QUOI ?</h1>
         <v-spacer></v-spacer>
         <p>
@@ -22,11 +30,21 @@
       </v-card>
       <v-spacer></v-spacer>
       <v-tab to="/Apropos">
-      <v-btn class="ml-9 font-weight-bold" color="primary" dark>cliquer ici</v-btn>
+      <v-btn class="font-weight-bold" color="primary" dark>cliquer ici</v-btn>
       </v-tab>
     </v-col>
-    <v-col md="6" class="d-flex justify-end">
+    <v-col
+      sm="12"
+      md="5"
+      :class="{
+        'd-flex': !$vuetify.breakpoint.xsOnly,
+        'justify-end': !$vuetify.breakpoint.xsOnly
+      }"
+    >
       <v-img
+        :class="{
+          'ml-5': !$vuetify.breakpoint.xsOnly
+        }"
         contain
         max-height="400"
         max-width="500"
@@ -34,6 +52,7 @@
       />
     </v-col>
   </v-row>
+
 </template>
 
 <script>

@@ -1,38 +1,50 @@
 <template>
-
-  <v-footer padless
+<v-footer
+    dark
+    padless
   >
-    <v-card flat mx-0 tile class="primary white--text text-center">
-      <v-card-text>
-        <v-btn
-          v-for="icon in icons"
-          :key="icon"
-          class="mx-4 white--text"
-         elevation="0"
-         rounded
-          
-       
-        >
-         <a :href="icon.url" :target="icon.target"><v-icon color="white" size="34px">{{ icon.name }}</v-icon></a>
-        
-        </v-btn>
-      </v-card-text>
+    <v-card
+      class="flex"
+      flat
+      tile
+    >
+      <v-card-title class="gray">
+        <v-row>
+          <v-col cols="3" offset-md="1">
+            <span class="legend text-secondary--text">Nous contacter</span>
+            <v-textarea
+              class="text-area"
+              outlined
+              value="Votre message"
+              rows="2"
+              auto-grow
+            />
+            <v-btn
+              class="primary white--text pa-5"
+              rounded
+            >
+              Envoyer
+            </v-btn>
+          </v-col>
+          <v-col cols="6" offset-md="2" class="text-secondary--text mt-5">
+            <div class="title ml-4 mb-3">Nos réseaux sociaux</div>
+            <v-btn
+              v-for="icon in icons"
+              :key="icon.name"
+              class="mx-4"
+              elevation="0"
+              color="text-secondary"
+            >
+              <a :href="icon.url" :target="icon.target">
+                <v-icon color="gray" size="34px">{{ icon.name }}</v-icon>
+              </a>
+            </v-btn>
+          </v-col>
+        </v-row>
+      </v-card-title>
 
-      <v-card-text class="white--text pt-0">
-        Phasellus feugiat arcu sapien, et iaculis ipsum elementum sit amet.
-        Mauris cursus commodo interdum. Praesent ut risus eget metus luctus
-        accumsan id ultrices nunc. Sed at orci sed massa consectetur dignissim
-        a sit amet dui. Duis commodo vitae velit et faucibus. Morbi vehicula
-        lacinia malesuada. Nulla placerat augue vel ipsum ultrices, cursus
-        iaculis dui sollicitudin. Vestibulum eu ipsum vel diam elementum
-        tempor vel ut orci. Orci varius natoque penatibus et magnis dis
-        parturient montes, nascetur ridiculus mus.
-      </v-card-text>
-
-      <v-divider></v-divider>
-
-      <v-card-text class="white--text">
-        {{ new Date().getFullYear() }} — <strong>WAJIH</strong>
+      <v-card-text class="py-2 white--text text-center primary white--text">
+        {{ new Date().getFullYear() }} — <strong>Vuetify</strong>
       </v-card-text>
     </v-card>
   </v-footer>
@@ -47,7 +59,6 @@ data: () => ({
 
     
     icons: [
-      
        {
             name:'mdi-facebook',
             url: 'https://www.facebook.com/',
@@ -84,7 +95,16 @@ model: null,
 </script>
 
 <style scoped>
-
+.text-area >>> textarea{
+  color: #555 !important;
+  width: 300px !important;
+}
+.text-area >>> fieldset{
+  border-color: #555 !important;
+}
+.text-area >>> .v-text-field__details{
+  display: none;
+}
 .theme--light.v-btn.v-btn--has-bg {
     background-color: #EE957F!important;
 }

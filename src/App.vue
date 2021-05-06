@@ -1,11 +1,10 @@
 <template>
   <v-app app class="secondary">
-    <NavBar />
-
-    <v-main class="pa-0">
+    <NavBar @click:drawer="clickDrawer"/>
+    <Drawer v-if="$vuetify.breakpoint.xsOnly && showDrawer" />
+    <v-main>
       <router-view></router-view>
     </v-main>
-
     <Footer />
   </v-app>
 </template>
@@ -13,15 +12,26 @@
 <script>
 import NavBar from "./components/NavBar";
 import Footer from "./components/Footer.vue";
+import Drawer from "./components/Drawer.vue";
+
 export default {
   name: "App",
   components: {
     NavBar,
     Footer,
+    Drawer,
   },
-  data: () => ({}),
+  data () {
+    return {
+      showDrawer: false
+    }
+  },
 
-  methods: {},
+  methods: {
+    clickDrawer (value) {
+      this.showDrawer = value
+    }
+  },
 };
 </script>
 <style lang="scss">

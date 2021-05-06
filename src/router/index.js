@@ -5,8 +5,9 @@ import Contact from "../views/Contact";
 import Actualites from "../components/actualites/container"
 import Login from "../components/login/container"
 import Apropos from "../views/Apropos"
-import Inscription from "../components/inscription/container"
+// import Inscription from "../components/inscription/container"
 import Home from "../views/Home"
+import Register from '../views/Auth/Register'
 
 Vue.use(VueRouter)
 
@@ -39,7 +40,7 @@ const routes = [
   {
     path: '/inscription',
     name: 'Inscription',
-    component: Inscription
+    component: Register
   },
 
 ]

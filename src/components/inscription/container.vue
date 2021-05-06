@@ -1,50 +1,31 @@
 <template>
   <v-container class="my-5" >
-  
-      <v-layout row>
-<v-col xs12 md6 >
-<h1 outline block class="#466F6E"> INSCRIPTION </h1>
-</v-col>
-<v-col  class="bg" md6 >
-<v-img
-  lazy-src="../../assets/images/bg8.png"
-  max-height="500"
-  max-width="500"
-  src="../../assets/images/bg8.png">
-  
-  </v-img>
+    <v-layout row>
+      <v-col xs12 md6 >
+      <h1 outline block class="#466F6E"> INSCRIPTION </h1>
+      </v-col>
+      <v-col  class="bg" md6 >
+      <v-img
+        lazy-src="../../assets/images/bg8.png"
+        max-height="500"
+        max-width="500"
+        src="../../assets/images/bg8.png">
+        
+        </v-img>
 
-</v-col>
+      </v-col>
+    </v-layout>
+    <v-layout row>
+      <v-col d-inline xs12 md6 >
+      <h1 class="green"> NEEDEUR </h1>
+      </v-col>
+    </v-layout>
+    <v-layout row>
+      <v-col xs12 md6 >
+      <h1 outline block class="pink"> NEEDÉE </h1>
+      </v-col>
 
-</v-layout>
-      <v-layout row>
-<v-col d-inline xs12 md6 >
-<h1 class="green"> NEEDEUR </h1>
-</v-col>
-
-</v-layout>
- <v-layout row>
-<v-col xs12 md6 >
-<h1 outline block class="pink"> NEEDÉE </h1>
-</v-col>
-
-</v-layout>
- 
-
- 
-
-
-
-
-   
-
-
-
-
-
-
-
-
+    </v-layout>
   </v-container>
 </template>
 
