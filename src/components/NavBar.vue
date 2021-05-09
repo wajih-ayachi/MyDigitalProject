@@ -23,8 +23,11 @@
       }"
     >
       <v-tab to="/">Home</v-tab>
+      <v-spacer></v-spacer>
       <v-tab to="/actu">Actualités</v-tab>
+       <v-spacer></v-spacer>
       <v-tab to="/apropos">A propos</v-tab>
+       <v-spacer></v-spacer>
       <v-tab to="/contact">Contact</v-tab>
     </v-tabs>
     <v-spacer></v-spacer>
@@ -33,7 +36,7 @@
       <v-icon>mdi-bell-ring-outline</v-icon>
     </v-btn>
 
-    <v-btn icon>
+    <v-btn to="/login" icon>
       <v-icon>mdi-account-circle</v-icon>
     </v-btn>
 

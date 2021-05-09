@@ -17,7 +17,6 @@
     <v-spacer></v-spacer>
     <v-form ref="form" v-model="valid" lazy-validation>
       <v-textarea
-      
         filled
         name="input-7-4"
         label="Votre message"
@@ -27,7 +26,6 @@
       <v-text-field
         class="background"
         v-model="lastName"
-        :counter="10"
         :error-messages="errors"
         label="NOM"
         required
@@ -108,7 +106,7 @@ export default {
     ],
   }),
 
-  methods: {
+  /*methods: {
     validate() {
       this.$refs.form.validate();
     },
@@ -118,7 +116,7 @@ export default {
     resetValidation() {
       this.$refs.form.resetValidation();
     },
-  },
+  },*/
 };
 </script>
 <style scoped>
@@ -132,5 +130,4 @@ export default {
 .v-application .pt-10 {
   padding-top: 70px !important;
 }
-
 </style>

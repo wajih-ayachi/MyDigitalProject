@@ -57,9 +57,7 @@
           </v-card>
 
           <v-spacer></v-spacer>
-          <v-col justify="center" align="center">
-            <v-btn class="ml-9" color="#EE957F" dark>JE COMMENCE</v-btn>
-          </v-col>
+         
         </v-col>
 
         <v-col md="6">
@@ -81,6 +79,9 @@
             </p>
           </v-card>
         </v-col>
+         <v-col class="mr-9" align="end" >
+            <v-btn class="ml-9 font-weight-bold" color="#EE957F" rounded  dark>JE COMMENCE</v-btn>
+          </v-col>
       </v-row>
     </v-row>
   </v-container>
@@ -95,7 +96,7 @@ export default {};
   color: #466f6e;
   font-weight: bold;
   margin-left: 50px;
-  margin-top: 60px;
+  margin-top: 40px;
   text-align: center;
   display: block;
   font-size: 55px;

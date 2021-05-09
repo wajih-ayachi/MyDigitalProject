@@ -10,7 +10,7 @@
     >
       <v-card-title class="gray">
         <v-row>
-          <v-col cols="3" offset-md="1">
+          <v-col xs="6" md="3" offset-md="1" >
             <span class="legend text-secondary--text">Nous contacter</span>
             <v-textarea
               class="text-area"
@@ -19,21 +19,25 @@
               rows="2"
               auto-grow
             />
-            <v-btn
+            <v-btn 
               class="primary white--text pa-5"
               rounded
             >
               Envoyer
             </v-btn>
           </v-col>
-          <v-col cols="6" offset-md="2" class="text-secondary--text mt-5">
-            <div class="title ml-4 mb-3">Nos réseaux sociaux</div>
+         
+          <v-col cols="6"  offset-md="2" class="text-secondary--text mt-1  "
+              
+          >
+            <div  class="title ml-4 mb-3 ">Nos réseaux sociaux</div>
             <v-btn
               v-for="icon in icons"
               :key="icon.name"
-              class="mx-4"
+            
+              class="mx-4 mb-5"
               elevation="0"
-              color="text-secondary"
+              color="#27272752"
             >
               <a :href="icon.url" :target="icon.target">
                 <v-icon color="gray" size="34px">{{ icon.name }}</v-icon>
@@ -44,7 +48,7 @@
       </v-card-title>
 
       <v-card-text class="py-2 white--text text-center primary white--text">
-        {{ new Date().getFullYear() }} — <strong>Vuetify</strong>
+        {{ new Date().getFullYear() }} — <strong>Copyright © by wajih </strong>
       </v-card-text>
     </v-card>
   </v-footer>

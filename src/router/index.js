@@ -2,10 +2,10 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 
 import Contact from "../views/Contact";
-import Actualites from "../components/actualites/container"
+import Actualites from "../views/actualites"
 import Login from "../components/login/container"
 import Apropos from "../views/Apropos"
-// import Inscription from "../components/inscription/container"
+
 import Home from "../views/Home"
 import Register from '../views/Auth/Register'
 
