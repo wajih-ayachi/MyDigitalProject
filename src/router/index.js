@@ -9,6 +9,8 @@ import Apropos from "../views/Apropos"
 import Home from "../views/Home"
 import Register from '../views/Auth/Register'
 
+import Parent from '../components/Parent'
+
 Vue.use(VueRouter)
 
 const routes = [
@@ -42,7 +44,11 @@ const routes = [
     name: 'Inscription',
     component: Register
   },
-
+  {
+    path: '/parent',
+    name: 'Parent',
+    component: Parent
+  }
 ]
 
 const router = new VueRouter({
