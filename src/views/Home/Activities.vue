@@ -1,13 +1,13 @@
 <template>
-  <v-row class="mb-9 pb-5 pt-5 p grey lighten-3" width>
-    <v-col sm="12" md="3" offset-md="3">
+  <v-row class="mb-9 pb-5 pt-5 mt-9 grey lighten-3" width>
+    <v-col class="mt-12" sm="12" md="3" offset-md="3">
       <v-img src="@/assets/images/activites-manuelles.jpg" class="rounded-xl">
         <v-btn class="imageBtn" elevation="5" large to="/actu"
           >ACTIVITÉS MANUELLES</v-btn
         >
       </v-img>
     </v-col>
-    <v-col sm="12" md="3">
+    <v-col class="mt-12" sm="12" md="3">
       <v-img src="@/assets/images/activites-sport.jpg" class="rounded-xl">
         <v-btn class="imageBtn" elevation="5" large to="/actu"
           >ACTIVITÉS SPORTIVES</v-btn

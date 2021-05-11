@@ -33,10 +33,10 @@
     <v-spacer></v-spacer>
 
     <v-btn icon>
-      <v-icon>mdi-bell-ring-outline</v-icon>
+      <v-icon class="ml-3 mr-3">mdi-bell-ring-outline</v-icon>
     </v-btn>
-
-    <v-btn to="/login" icon>
+    <!-- <v-spacer></v-spacer> -->
+    <v-btn  class="ml-3 mr-3" to="/login" icon>
       <v-icon>mdi-account-circle</v-icon>
     </v-btn>
 

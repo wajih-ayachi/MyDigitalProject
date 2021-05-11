@@ -15,7 +15,7 @@
             <v-textarea
               class="text-area"
               outlined
-              value="Votre message"
+              value="Votre message" 
               rows="2"
               auto-grow
             />

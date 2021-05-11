@@ -49,6 +49,7 @@
         max-height="400"
         max-width="500"
         src="../../assets/images/equipe_NeedU.png"
+       
       />
     </v-col>
   </v-row>

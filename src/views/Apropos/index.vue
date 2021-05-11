@@ -1,6 +1,9 @@
 <template>
   <v-container fluid>
     <v-row>
+       
+    </v-row>
+    <v-row>
       <v-img
         class="mx-0"
         cover

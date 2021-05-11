@@ -3,6 +3,7 @@
     <Carousel :users="users"/>
     <Ckoi />
     <Activities />
+    <ProfilCarousel/>
   </v-container>
 </template>
 
@@ -10,10 +11,11 @@
 import Carousel from './Carousel'
 import Ckoi from './Ckoi'
 import Activities from './Activities'
+import ProfilCarousel from '../../components/ProfilCarousel'
 
 export default {
   name:'home',
-  components: { Carousel, Ckoi, Activities },
+  components: { Carousel, Ckoi, Activities, ProfilCarousel },
   data() {
     return {
       users: []
