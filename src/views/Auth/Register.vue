@@ -47,14 +47,14 @@
         <v-col class="d-flex flex-row-start">
         <v-img
           justify="start"
-          lazy-src="../../assets/images/bg-12.png"
           max-height="250"
           max-width="250"
-          src="../../assets/images/bg-12.png"
         >
         </v-img>
       </v-col>
 
+          <!-- lazy-src="../../assets/images/bg-12.png"
+          src="../../assets/images/bg-12.png" -->
     </v-row>
   </v-container>
 </template>

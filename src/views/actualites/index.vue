@@ -11,8 +11,8 @@
         cover
         height="350px"
         aspect-ratio="9"
-        src="../../assets/images/pexels-emma-bauso-3585811.jpg"
       >
+        <!-- src="../../assets/images/pexels-emma-bauso-3585811.jpg" -->
 
       </v-img>
       </v-col>
@@ -23,8 +23,8 @@
         cover
         height="350px"
         aspect-ratio="9"
-        src="../../assets/images/pexels-ron-lach-7097825.jpg"
       >
+        <!-- src="../../assets/images/pexels-ron-lach-7097825.jpg" -->
 
       </v-img>
       </v-col>
@@ -60,8 +60,8 @@
         cover
         height="350px"
         aspect-ratio="9"
-        src="../../assets/images/Sans titre (16).jpg"
       >
+        <!-- src="../../assets/images/Sans titre (16).jpg" -->
 
       </v-img>
       </v-col>
@@ -72,8 +72,8 @@
         cover
         height="350px"
         aspect-ratio="9"
-        src="../../assets/images/Sans titre (12).jpg"
       >
+        <!-- src="../../assets/images/Sans titre (12).jpg" -->
 
       </v-img>
       </v-col>

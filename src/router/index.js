@@ -32,12 +32,12 @@ const routes = [
   {
     path: '/login',
     name: 'Login',
-    component: Login
+    component: Login,
   },
   {
     path: '/apropos',
     name: 'Apropos',
-    component: Apropos
+    component: Apropos,
   },
   {
     path: '/inscription',

@@ -13,7 +13,20 @@
       class="search-bar"
       background-color="#bbc8ce"
       rounded
-    />
+      :item-text="(item) => item.name.first + ' ' + item.name.last"
+    >
+      <template v-slot:item="{ item }">
+        <v-list-item-avatar>
+          <v-img
+            :alt="`${item.name.first} avatar`"
+            :src="item.picture.thumbnail"
+          ></v-img>
+        </v-list-item-avatar>
+        <v-list-item-content>
+          <v-list-item-title v-text="item.name.first + ' ' + item.name.last"></v-list-item-title>
+        </v-list-item-content>
+      </template>
+    </v-autocomplete>
     <v-carousel-item
       v-for="(item, i) in carouselImages"
       :key="i"

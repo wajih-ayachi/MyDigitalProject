@@ -2,10 +2,8 @@
 <!-- @click="increment" -->
   <div>
     <v-btn @click="handleClick('increment')">
-      +
-    </v-btn>
-    <v-btn @click="handleClick('decrement')">
-      -
+      <slot name="label" />
+      <slot name="icon" />
     </v-btn>
   </div>
 </template>

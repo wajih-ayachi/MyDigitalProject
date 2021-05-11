@@ -1,5 +1,5 @@
 <template>
-  <v-app app class="secondary">
+  <v-app app class="secondary" dark>
     <NavBar @click:drawer="clickDrawer"/>
     <Drawer v-if="$vuetify.breakpoint.xsOnly && showDrawer" />
     <v-main>
@@ -32,6 +32,7 @@ export default {
       this.showDrawer = value
     }
   },
+
 };
 </script>
 <style lang="scss">

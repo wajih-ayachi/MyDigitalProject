@@ -1,5 +1,5 @@
 <template>
-  <v-row class="mb-9 pb-5 pt-5 p grey lighten-3" width>
+  <v-row class="pt-5 mb-1 grey lighten-3" width>
     <v-col sm="12" md="3" offset-md="3">
       <v-img src="@/assets/images/activites-manuelles.jpg" class="rounded-xl">
         <v-btn class="imageBtn" elevation="5" large to="/actu"
