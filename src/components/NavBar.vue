@@ -1,22 +1,12 @@
 <template>
-  <v-app-bar
-    color="primary"
-    dense
-    dark
-    app
-  >
-    <v-app-bar-nav-icon
-      v-if="$vuetify.breakpoint.xsOnly"
-      @click="showDrawer"
-    />
+  <v-app-bar color="primary" dense dark app>
+    <v-app-bar-nav-icon v-if="$vuetify.breakpoint.xsOnly" @click="showDrawer" />
     <!-- <v-flex style="width: 140px" class="font-weight-bold"> -->
-    <v-tab class="white--text" to="/">
-      NEED U
-    </v-tab>
+    <v-tab class="white--text" to="/"> NEED U </v-tab>
     <!-- </v-flex> -->
     <!-- <v-toolbar-title>Need U</v-toolbar-title> -->
     <v-spacer></v-spacer>
-    <v-tabs 
+    <v-tabs
       align-with-title
       :class="{
         'd-none': $vuetify.breakpoint.xsOnly,
@@ -25,9 +15,9 @@
       <v-tab to="/">Home</v-tab>
       <v-spacer></v-spacer>
       <v-tab to="/actu">Actualités</v-tab>
-       <v-spacer></v-spacer>
+      <v-spacer></v-spacer>
       <v-tab to="/apropos">A propos</v-tab>
-       <v-spacer></v-spacer>
+      <v-spacer></v-spacer>
       <v-tab to="/contact">Contact</v-tab>
     </v-tabs>
     <v-spacer></v-spacer>
@@ -36,14 +26,11 @@
       <v-icon class="ml-3 mr-3">mdi-bell-ring-outline</v-icon>
     </v-btn>
     <!-- <v-spacer></v-spacer> -->
-    <v-btn  class="ml-3 mr-3" to="/login" icon>
+    <v-btn class="ml-3 mr-3" to="/login" icon>
       <v-icon>mdi-account-circle</v-icon>
     </v-btn>
 
-    <v-btn 
-      class="white primary--text font-weight-bold"
-      to="/inscription"
-    >
+    <v-btn class="white primary--text font-weight-bold" to="/inscription">
       S'inscrire
     </v-btn>
 
@@ -76,28 +63,26 @@
 
 <script>
 export default {
-  name: 'NavBar',
-  data () {
+  name: "NavBar",
+  data() {
     return {
-      drawer: false
-    }
+      drawer: false,
+    };
   },
   methods: {
-    showDrawer () {
-      this.drawer = !this.drawer
-      this.$emit('click:drawer', this.drawer)
-    }
-  }
-}
+    showDrawer() {
+      this.drawer = !this.drawer;
+      this.$emit("click:drawer", this.drawer);
+    },
+  },
+};
 </script>
 
 <style scoped>
-
 /* @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
  */
 
-.v-btn{
-font-family: 'Open Sans', sans-serif;}
-
-
+.v-btn {
+  font-family: "Open Sans", sans-serif;
+}
 </style>

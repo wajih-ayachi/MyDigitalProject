@@ -1,31 +1,32 @@
 <template>
   <v-container fluid pa-0>
-    <Carousel :users="users"/>
+    <Carousel :users="users" />
     <Ckoi />
     <Activities />
-    <ProfilCarousel/>
+
+    <ProfileSlider :users="randomUsers" />
   </v-container>
 </template>
 
 <script>
-import Carousel from './Carousel'
-import Ckoi from './Ckoi'
-import Activities from './Activities'
-import ProfilCarousel from '../../components/ProfilCarousel'
+import Carousel from "./Carousel";
+import Ckoi from "./Ckoi";
+import Activities from "./Activities";
+import ProfileSlider from "./ProfileSlider";
 
 export default {
-  name:'home',
-  components: { Carousel, Ckoi, Activities, ProfilCarousel },
-  data() {
-    return {
-      users: []
-    }
+  name: "home",
+  components: { Carousel, Ckoi, Activities, ProfileSlider },
+  computed: {
+    users() {
+      return this.$store.getters["getAllUsers"];
+    },
+    randomUsers() {
+      return this.$store.getters["getRandomUsers"];
+    },
   },
-  async mounted () {
-    const response = await fetch('https://randomuser.me/api/?results=50')
-    const result = await response.json()
-
-    this.users = result.results.map((el) => el.email)
-  }
-}
+  async mounted() {
+    await this.$store.dispatch("getUsers");
+  },
+};
 </script>

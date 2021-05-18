@@ -1,8 +1,6 @@
 <template>
   <v-container fluid>
-    <v-row>
-       
-    </v-row>
+    <v-row> </v-row>
     <v-row>
       <v-img
         class="mx-0"
@@ -19,6 +17,7 @@
       <v-col md="12" ml-auto style="margin-top: 90px">
         <v-card class="pl-9" elevation="0">
           <v-spacer></v-spacer>
+
           <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas porro
             assumenda optio, magni beatae eveniet necessitatibus corporis ut
@@ -42,6 +41,10 @@
         <v-col md="6" ml-auto>
           <v-card class="pl-9 pa-2" elevation="0">
             <v-spacer></v-spacer>
+
+            <v-card-title primary-title class="justify-center">
+              NEEDEUR
+            </v-card-title>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas
               porro assumenda optio, magni beatae eveniet necessitatibus
@@ -60,11 +63,13 @@
           </v-card>
 
           <v-spacer></v-spacer>
-         
         </v-col>
 
         <v-col md="6">
           <v-card class="pa-2" elevation="0">
+            <v-card-title primary-title class="justify-center">
+              NEEDER
+            </v-card-title>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas
               porro assumenda optio, magni beatae eveniet necessitatibus
@@ -82,16 +87,29 @@
             </p>
           </v-card>
         </v-col>
-         <v-col class="mr-9" align="end" >
-            <v-btn class="ml-9 font-weight-bold" color="#EE957F" rounded  dark>JE COMMENCE</v-btn>
-          </v-col>
+        <v-col class="mr-9" align="end">
+          <v-btn class="ml-9 font-weight-bold" color="#EE957F" rounded dark
+            >JE COMMENCE</v-btn
+          >
+        </v-col>
       </v-row>
+    </v-row>
+    <span class="titre pb-9" align-center> CHERCHER PAR ZONE </span>
+   
+    <v-row>
+      <GoogleMap />
     </v-row>
   </v-container>
 </template>
 
 <script>
-export default {};
+import GoogleMap from "../../components/GoogleMap";
+export default {
+  name: "App",
+  components: {
+    GoogleMap,
+  },
+};
 </script>
 
 <style scoped>
@@ -103,5 +121,11 @@ export default {};
   text-align: center;
   display: block;
   font-size: 55px;
+}
+.h1{
+  text-align: center;
+  align-content: center;
+  display: block;
+  
 }
 </style>

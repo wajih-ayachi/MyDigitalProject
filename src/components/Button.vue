@@ -1,36 +1,32 @@
 <template>
-<!-- @click="increment" -->
+  <!-- @click="increment" -->
   <div>
     <v-btn @click="handleClick('increment')">
-      +
-    </v-btn>
-    <v-btn @click="handleClick('decrement')">
-      -
+      <slot name="label" />
+      <slot name="icon" />
     </v-btn>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'Button',
+  name: "Button",
 
   props: {
     counter: {
       type: Number,
       default: 0,
-      require: true
-    }
+      require: true,
+    },
   },
 
   methods: {
-    handleClick (method) {
-      this.$emit('incrument', method)
-    }
+    handleClick(method) {
+      this.$emit("incrument", method);
+    },
   },
-
-}
+};
 </script>
 
 <style>
-
 </style>
