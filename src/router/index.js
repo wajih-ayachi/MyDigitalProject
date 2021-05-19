@@ -12,6 +12,7 @@ import Manuelle from  '../views/Activities/Manuelle.vue'
 import Parent from '../components/Parent'
 import Sportive from '../views/Activities/Sportive.vue'
 import Culturelle from '../views/Activities/Culturelle'
+import Activity from '../views/Home/ActivityShow'
 
 Vue.use(VueRouter)
 
@@ -70,6 +71,11 @@ const routes = [
     path: '/parent',
     name: 'Parent',
     component: Parent
+  },
+  {
+    path: '/activity/:id',
+    name: 'ActivityShow',
+    component: Activity
   }
 ]
 

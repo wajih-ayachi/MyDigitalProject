@@ -54,6 +54,7 @@
         </v-col>
       </v-card>
     </v-layout>
+
     <v-row>
       <v-col class="d-flex flex-row-start">
         <v-img
@@ -66,6 +67,7 @@
         </v-img>
       </v-col>
     </v-row>
+
   </v-container>
 </template>
 
@@ -74,12 +76,6 @@ export default {};
 </script>
 
 <style scoped>
-
-.v-application .mb-9 {
-  margin-bottom: 36px !important;
-  text-align: center;
-  font-size: 30px;
-}
 .v-application .text-center {
   text-align: center !important;
   color: #5c606e;
