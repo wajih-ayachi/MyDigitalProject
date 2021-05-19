@@ -14,9 +14,31 @@
     >
       <v-tab to="/">Home</v-tab>
       <v-spacer></v-spacer>
-      <v-tab to="/actu">Actualités</v-tab>
+      <v-menu open-on-hover top offset-y>
+      <template v-slot:activator="{ on, attrs }">
+          <v-tab to="/apropos">A propos</v-tab>
+      <v-btn icon v-bind="attrs"
+          v-on="on">
+      <v-icon class="ml-3 mr-3" left>$expand</v-icon>
+      </v-btn>
+       
+      </template>
+
+      <v-list>
+        <v-list-item
+          v-for="(item, index) in items"
+          :key="index"
+          @click="v-on"
+        >
+          <v-list-item-title>{{ item.title }}</v-list-item-title>
+        </v-list-item>
+      </v-list>
+    </v-menu>
+      
+    
       <v-spacer></v-spacer>
-      <v-tab to="/apropos">A propos</v-tab>
+
+      <v-tab to="/actu">Actualités</v-tab>
       <v-spacer></v-spacer>
       <v-tab to="/contact">Contact</v-tab>
     </v-tabs>
@@ -33,6 +55,15 @@
     <v-btn class="white primary--text font-weight-bold" to="/inscription">
       S'inscrire
     </v-btn>
+    <v-spacer></v-spacer>
+     <v-switch
+        v-model="$vuetify.theme.dark"
+        hint=""
+       
+        label=""
+        persistent-hint
+        class="mt-5 ml-5"
+      ></v-switch>
 
     <!-- <v-menu
       left
@@ -65,9 +96,16 @@
 export default {
   name: "NavBar",
   data() {
+    
     return {
       drawer: false,
-    };
+         items: [
+        { title: 'QUI SOMMES NOUS?' },
+        { title: 'BLOG' },
+       
+      ],
+    }
+  
   },
   methods: {
     showDrawer() {
@@ -84,5 +122,10 @@ export default {
 
 .v-btn {
   font-family: "Open Sans", sans-serif;
+}
+.v-list-item .v-list-item__title, .v-list-item .v-list-item__subtitle {
+    line-height: 1.2;
+    color: #EE957F;
+    font-weight:500;
 }
 </style>

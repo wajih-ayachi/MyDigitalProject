@@ -130,4 +130,11 @@ export default {
 .v-application .pt-10 {
   padding-top: 70px !important;
 }
+
+.v-application .secondary.theme--dark {
+  background-color: red !important;
+  border-color: white !important;
+  color: #466f6e;
+  font-size: 53px;
+}
 </style>

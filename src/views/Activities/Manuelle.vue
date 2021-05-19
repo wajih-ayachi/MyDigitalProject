@@ -14,6 +14,7 @@
     </v-row>
     <v-row class="mb-9 pb-5 pt-5 mt-9" width>
       <v-col class="mt-12" sm="12" md="3" offset-md="3">
+          
         <v-img src="@/assets/images/poterie.png" class="rounded-xl">
           <v-btn class="imageBtn" elevation="5" large to="/actu">POTERIE</v-btn>
         </v-img>

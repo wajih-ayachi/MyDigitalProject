@@ -39,6 +39,21 @@
             <span class="primary--text font-weight-bold text-h5 mr-2">01</span>
             <span class="gray-dark--text">Pouces rouge</span>
           </v-col>
+          <v-row >
+          
+   <v-rating
+       class="ml-15 mt-1 "
+      v-model="rating"
+      background-color="grey"
+      half-increments
+      color="primary"
+      large
+      clearable
+    ></v-rating>
+          </v-row>
+          <v-row>
+            
+          </v-row>
         </v-row>
       </div>
       <div class="profile-footer"></div>
@@ -49,6 +64,10 @@
 <script>
 export default {
   name: "MiniProfile",
+  data:()=>({
+    rating: 3,
+    length:5,
+  }),
   props: ["user"],
   computed: {
     fullName() {

@@ -55,6 +55,31 @@ export default {
 .fade-enter-active, .fade-leave-active{
   transition: all .3s ease;
 }
+.theme--dark.v-card {
+    background-color: #121212;
+    color: #FFFFFF;
+}
+.theme--dark.v-application .secondary--text {
+    color: white !important;
+    caret-color: #424242 !important;
+}
+.theme--dark.v-application .text-center[data-v-028c8680] {
+  color: #FFFFFF;
+}
+.theme--dark.v-application--is-ltr .v-tabs--align-with-title > .v-tabs-bar:not(.v-tabs-bar--show-arrows):not(.v-slide-group--is-overflowing) > .v-slide-group__wrapper > .v-tabs-bar__content > .v-tab:first-child, .v-application--is-ltr .v-tabs--align-with-title > .v-tabs-bar:not(.v-tabs-bar--show-arrows):not(.v-slide-group--is-overflowing) > .v-slide-group__wrapper > .v-tabs-bar__content > .v-tabs-slider-wrapper + .v-tab {
+    margin-left: 42px;
+    color: rgba(255, 255, 255, 0.6);
+}
+.v-tab--active {
+    color: white!important;
+}
+.v-tabs-slider {
+    background-color: currentColor;
+    height: 100%;
+    width: 100%;
+    color: white;
+}
+
 // .v-application .red.lighten-3 {
 //   background-color: #ee957f !important;
 //   border-color: #ef9a9a !important;

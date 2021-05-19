@@ -7,7 +7,9 @@
   >
     <v-carousel-item v-for="(user, i) in users" :key="i">
       <MiniProfile :user="user" />
+   
     </v-carousel-item>
+    
   </v-carousel>
 </template>
 

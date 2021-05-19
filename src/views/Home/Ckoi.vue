@@ -47,7 +47,7 @@
         contain
         max-height="400"
         max-width="500"
-        src="../../assets/images/equipe_NeedU.png"
+        src="../../assets/images/quoi.png"
       />
     </v-col>
   </v-row>
