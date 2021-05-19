@@ -1,6 +1,6 @@
 <template>
   <v-row class="pb-1 pa-5 text-center">
-    <v-col cols="6" class="pr-15">
+    <v-col class="col-sm-12 col-md-6">
       <v-img
         :src="user.picture.large"
         :aspect-ratio="1"
@@ -39,24 +39,20 @@
             <span class="primary--text font-weight-bold text-h5 mr-2">01</span>
             <span class="gray-dark--text">Pouces rouge</span>
           </v-col>
-          <v-row >
-          
-   <v-rating
-       class="ml-15 mt-1 "
-      v-model="rating"
-      background-color="grey"
-      half-increments
-      color="primary"
-      large
-      clearable
-    ></v-rating>
-          </v-row>
-          <v-row>
-            
-          </v-row>
+        </v-row>
+        <v-row class="mx-auto">
+        <v-rating
+            class="ml-15 mt-1 "
+            v-model="rating"
+            background-color="grey"
+            half-increments
+            color="primary"
+            large
+            clearable
+          ></v-rating>
         </v-row>
       </div>
-      <div class="profile-footer"></div>
+      <!-- <div class="profile-footer"></div> -->
     </v-col>
   </v-row>
 </template>
@@ -77,5 +73,3 @@ export default {
 };
 </script>
 
-<style>
-</style>

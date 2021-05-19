@@ -1,7 +1,7 @@
 export default {
   namespaced: true,
   state: {
-    categories: [
+    activities: [
       {
         id: 1,
         name: 'Activités manuelles',
@@ -29,9 +29,8 @@ export default {
     ]
   },
   getters: {
-    getAllCategories (state) {
-      console.log('AAAA')
-      return state.categories
+    getAllActivities(state) {
+      return state.activities
     }
   }
 }

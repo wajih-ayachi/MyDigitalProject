@@ -1,60 +1,46 @@
 <template>
-  <v-row class="pt-5 mb-1 grey lighten-3" width>
-    <v-col sm="12" md="3" offset-md="3" v-for="category in allCategories" :key="category.id">
-      <v-img :src="category.img" class="rounded-xl">
-        <v-btn class="imageBtn" elevation="5" large :to="`/activity/${category.id}`"
-          >{{ category.name }}</v-btn
+  <v-row class="mb-9 pb-5 pt-5 p" :class="{ 'grey lighten-3': !$vuetify.theme.dark }" width>
+    <v-col sm="12" md="3" offset-md="3" class="mr-4">
+      <v-img src="@/assets/images/activites-manuelles.jpg" class="rounded-xl">
+        <v-btn class="imageBtn" elevation="5" large to="/actu"
+          >ACTIVITÉS MANUELLES</v-btn
         >
       </v-img>
     </v-col>
-    <v-col class="mt-12" sm="12" md="3">
-       <v-tab to="/sportive">
+    <v-col sm="12" md="3" :class="{ 'ml-4': !$vuetify.breakpoint.xsOnly}">
       <v-img src="@/assets/images/activites-sport.jpg" class="rounded-xl">
-        <v-btn class="imageBtn" elevation="5" large to="/sportive"
-          >ACTIVITÉS SPORTIVES</v-btn>
+        <v-btn class="imageBtn" elevation="5" large to="/actu"
+          >ACTIVITÉS SPORTIVES</v-btn
+        >
       </v-img>
-       </v-tab>
     </v-col>
-    <v-col sm="12" md="3" offset-md="3">
-       <v-tab to="/culturelle">
+    <v-col sm="12" md="3" offset-md="3" class="mr-4">
       <v-img
         src="@/assets/images/activites-culturelles.jpg"
         class="rounded-xl span"
       >
-        <v-btn class="imageBtn" elevation="5" large to="/culturelle"
+        <v-btn class="imageBtn" elevation="5" large to="/actu"
           >ACTIVITÉS CULTURELLES</v-btn
         >
       </v-img>
-       </v-tab>
     </v-col>
-    <v-col sm="12" md="3">
-       <v-tab to="/Loisir">
+    <v-col sm="12" md="3" :class="{ 'ml-4': !$vuetify.breakpoint.xsOnly}">
       <v-img src="@/assets/images/loisir-detente.jpg" class="rounded-xl">
-        <v-btn class="imageBtn" elevation="5" large to="/Loisir"
-          >LOISIRS ET DETENTE</v-btn
-        >
+        <v-btn class="imageBtn" elevation="5" large to="/actu"
+          >LOISIRS ET DETENTE</v-btn>
+        
       </v-img>
-       </v-tab>
     </v-col>
-    <v-col md="12" sm="12" class="mx-auto rounded-xl mb-6 mt-6 text-center">
+    <v-col md="12" sm="12" class=" mx-auto rounded-xl mb-6 mt-6 text-center">
       <v-btn class="primary font-weight-bold">VOIR PLUS</v-btn>
     </v-col>
-  </v-row>
-    <!-- <v-col md="12" sm="12" class=" mx-auto rounded-xl mb-6 mt-6 text-center">
-      <v-btn class="primary font-weight-bold">VOIR PLUS</v-btn>
-    </v-col>
-    </v-row> -->
+    </v-row>
+  
+  
 </template>
 
 <script>
-export default {
-  name: 'Activites',
-  computed: {
-    allCategories () {
-      return this.$store.getters['category/getAllCategories']
-    }
-  }
-};
+export default {};
 </script>
 
 <style scoped>

@@ -3,7 +3,6 @@
     <Carousel :users="users" />
     <Ckoi />
     <Activities />
-
     <ProfileSlider :users="randomUsers" />
   </v-container>
 </template>

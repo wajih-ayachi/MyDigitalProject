@@ -13,6 +13,8 @@ export default new Vuetify({
         'gray-dark': '#848484',
         'text-main': '#5f6270',
         'text-secondary': '#5d5555',
+        bg1: '#ffffff',
+        bg2: '#ffffff',
       },
       dark:{
         primary: '#466F6E',
@@ -22,6 +24,8 @@ export default new Vuetify({
         info: '#2196F3',
         success: '#4CAF50',
         warning: '#FFC107',
+        bg1: '#131a1a',
+        bg2: '#162322'
       }
     },
   },

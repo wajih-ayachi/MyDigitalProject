@@ -1,12 +1,19 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
-import category from './category'
+import activity from './activity'
+import global from './global'
+import createPersistedState from "vuex-persistedstate"
+
+const dataState = createPersistedState({
+  paths: ['global']
+})
 
 Vue.use(Vuex)
 
 export default new Vuex.Store({
   modules: {
-    category
+    activity,
+    global
   },
 
   state: {
@@ -36,6 +43,8 @@ export default new Vuex.Store({
       state.users = users
     }
   },
+
+  plugins: [dataState]
 
 })
 
